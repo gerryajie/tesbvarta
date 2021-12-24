@@ -1,0 +1,22 @@
+1. React Js adalah library yang mengurusi bagian UI/ Tampilan .
+ React Js juga bersifat open source yang dibuat oleh facebook dan hanya mengurusi 
+ tampilan depan dan logikanya
+
+2. Proses Berjalannya program tidak harus menunggu antrian
+
+3.membuat fungsi Async/await nya. jika memakai promise harus pakai metode then 
+untk mengakses promisenya tapi pada proses async cukup menggunakan await dan akan membalikan
+nilai dari promise nya
+
+
+
+async function contohAsync () {
+    let p = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("Hello World!"), 2000)
+    });
+
+    let result = await p;
+    alert(result);
+}
+
+contohAsync();
